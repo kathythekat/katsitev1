@@ -240,8 +240,6 @@ body {
   }
 } 
 
-  
- 
 
 .link-icons {
     margin-top: 20px;
@@ -249,7 +247,7 @@ body {
     justify-content: center;
 }
 
-.instagram-icon, .facebook-icon, .email-icon {
+.instagram-icon, .github-icon, .email-icon {
     margin-left: 20px;
 
 }
