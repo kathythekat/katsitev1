@@ -58,14 +58,5 @@ navClicker.addEventListener('click', function() {
 
 
 
-function toggleNav() {
-    let open = navClicker.addEventListener('click', function() {
-        openNavBar.classList.add('nav-links--open')
-    })
-
-
-}
-
-
 
 
