@@ -11,6 +11,11 @@ body {
     margin-bottom: 5px;
 }
 
+.header-style {
+    display: flex;
+
+}
+
 .name {
     font-size: 80px;
     padding: 32px;
@@ -20,8 +25,7 @@ body {
 .nav-bar {
   display: flex;
   flex-direction:row-reverse; 
-  padding-right: 24px;
-  padding-left: 24px;
+  padding-right: 32px;
   margin-top: 0;
   height: 44px;
 }
@@ -47,7 +51,7 @@ body {
 .nav-links-container a {
   color: #637865;
   padding:12px;
-  padding-top:8px;
+  padding-top:4px;
   text-decoration: none;
   font-size: 20px;
   display: block;
@@ -69,14 +73,15 @@ body {
 }
 
 .picture-1 {
-  border-radius: 12px;
-  border: solid white 4px;
+  border-radius: 10px;
+  display:flex;
+  border: solid #637865 4px;
 }
 
 .content-box p {
     margin: 0;
     padding: 0;
-    font-family: Quicksand, sans-serif;
+    font-family: Handlee, sans-serif;
     color: #728085;
     font-size: 30px;
     margin-left: 30px;
@@ -84,13 +89,13 @@ body {
 }
 
 .dog-button {
-    color: #FE9454;
+    color: #BA6ACB;
     font-size: 35px;
     border: none;
     width: 80px;
 }
 .dog-button:hover {
-    color:#F3C836;
+    color:#FE9454;
 }
 .enlarged-button {
   font-family: 'Handlee', cursive;
@@ -105,20 +110,20 @@ body {
 }
 
 .bike-button {
-  color: #FE9454;
+  color: #F3C836;
   font-size: 35px;
   width: 60px;
   border: none;
 }
 .bike-button:hover {
-  color:#F3C836;
+  color:#677C57;
 }
 .nurse-button {
-  color:#FE9454;
-  width: 86px;  
+  color:#6AACC4;
+  width: 85px;  
 }
 .nurse-button:hover {
-  color:#F3C836;
+  color:#F0C2EF;
 }
 
   /* Modal Content (Image) */
@@ -141,7 +146,7 @@ body {
   } 
 
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 800px){
+  @media only screen and (max-width: 700px){
     .modal-container {
       width: 100%;
     }
@@ -240,6 +245,8 @@ body {
   }
 } 
 
+  
+ 
 
 .link-icons {
     margin-top: 20px;
@@ -247,7 +254,7 @@ body {
     justify-content: center;
 }
 
-.instagram-icon, .github-icon, .email-icon {
+.instagram-icon, .facebook-icon, .email-icon {
     margin-left: 20px;
 
 }
@@ -258,46 +265,4 @@ a:hover {
 
 button {
   cursor: pointer;
-}
-
-/* Use a media query to add a breakpoint at 800px: */
-@media (max-width: 1024px) {
-  .header-container {
-    background-color:  #637865;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.name {
-    font-size: 60px;
-    padding: 32px;
-    margin: 0;
-}
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    /* The width is 100%, when the viewport is 800px or smaller */
-  }
-  .picture-1 {
-
-    max-width: 340px;
-    max-height: 420px;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 20px;
-  }
-  .content-box {
-    
-  }
-  .content-box p{
-    padding: 10px;
-    font-size: 24px;
-    line-height: 40px;
-  }
- 
-  
 }
