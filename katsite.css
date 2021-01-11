@@ -7,22 +7,53 @@ body {
 }
 
 .header-container {
-    background-color: #637865;
-    margin-bottom: 10px;
-}
-
-.header-style {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
+    background-color:  #637865;
+    margin-bottom: 5px;
 }
 
 .name {
-    font-size: 60px;
-    margin-bottom: 0;
+    font-size: 80px;
+    padding: 32px;
+    margin: 0;
 }
+
+.nav-bar {
+  display: flex;
+  flex-direction:row-reverse; 
+  padding-right: 32px;
+  margin-top: 0;
+  height: 44px;
+}
+
+.nav-icon:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+/* Style the navigation menu */
+
+.nav-links-container {
+  display: none;
+}
+
+.nav-links--open {
+  display: inline-flex;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+
+/* Style navigation menu links */
+.nav-links-container a {
+  color: #637865;
+  padding:12px;
+  padding-top:4px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
 
 .container2 {
     display: flex;
