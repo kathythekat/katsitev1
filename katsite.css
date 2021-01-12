@@ -1,19 +1,22 @@
 body {
     font-family: Quicksand, sans-serif;
-    color:  white;
-    background-color: #EEE;
+    color:#637865;
     padding: 0;
     margin: 0;
 }
 
 .header-container {
-    background-color:  #637865;
     margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(0, 200%);
 }
 
 .name {
+    display: flex;
     font-size: 80px;
-    padding: 32px;
     margin: 0;
 }
 
@@ -22,7 +25,7 @@ body {
   flex-direction:row-reverse; 
   padding-right: 24px;
   padding-left: 24px;
-  margin-top: 0;
+  margin-top: 44px;
   height: 44px;
 }
 
@@ -38,7 +41,13 @@ body {
 }
 
 .nav-links--open {
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+  margin-top: auto;
+  padding-right: 8px;
+
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -54,6 +63,20 @@ body {
   margin-right: 10px;
   margin-bottom: 20px;
 }
+
+
+.mountain-container {
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+
 
 
 .container2 {
@@ -74,52 +97,52 @@ body {
 }
 
 .content-box p {
-    margin: 0;
+    margin-top: 100px;
     padding: 0;
     font-family: Quicksand, sans-serif;
     color: #728085;
-    font-size: 30px;
+    font-size: 24px;
     margin-left: 30px;
-    line-height: 60px;
+    line-height: 56px;
+    border-top: solid #637865 3px;
+    border-bottom: solid #637865 3px;
 }
 
 .dog-button {
     color: #FE9454;
-    font-size: 35px;
+    font-size: 32px;
     border: none;
-    width: 80px;
+    width: 66px;
 }
 .dog-button:hover {
-    color:#F3C836;
+    color:#637865;
 }
 .enlarged-button {
   font-family: 'Handlee', cursive;
   border: none;
   padding: 0;
-  font-size:35px;
+  font-size:32px;
+  background-color: white;
 }
 .enlarged-button:hover {
-    font-size: 40px;
+    font-size: 36px;
     border: none;
     padding: 0;
+    color: #637865
 }
 
 .bike-button {
   color: #FE9454;
-  font-size: 35px;
+  font-size: 32px;
   width: 60px;
   border: none;
 }
-.bike-button:hover {
-  color:#F3C836;
-}
+
 .nurse-button {
   color:#FE9454;
   width: 86px;  
 }
-.nurse-button:hover {
-  color:#F3C836;
-}
+
 
   /* Modal Content (Image) */
   .popup-pic {
@@ -142,7 +165,7 @@ body {
 
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 800px){
-    .modal-container {
+    .fancy-modal-container, .bike-modal-container, .nurse-modal.container {
       width: 100%;
     }
   }
@@ -260,10 +283,12 @@ button {
   cursor: pointer;
 }
 
-/* Use a media query to add a breakpoint at 800px: */
+
+
+/* MEDIA ADJUSTMENT */
+
 @media (max-width: 1024px) {
   .header-container {
-    background-color:  #637865;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -274,6 +299,37 @@ button {
     padding: 32px;
     margin: 0;
 }
+
+.mountain-container {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.nav-bar {
+  display: inline-grid;
+  position: absolute;
+}
+
+.nav-links--open {
+  display: inherit; 
+  margin-top: auto;
+  padding-right: 8px;
+
+}
+
+.nav-links-container a {
+  color: #637865;
+  padding:12px;
+  padding-top:8px;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+
   .container2 {
     display: flex;
     flex-direction: column;
@@ -284,20 +340,19 @@ button {
   }
   .picture-1 {
 
-    max-width: 340px;
+    max-width: 320px;
     max-height: 420px;
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 20px;
   }
-  .content-box {
-    
-  }
+  
   .content-box p{
     padding: 10px;
     font-size: 24px;
     line-height: 40px;
   }
- 
-  
+   
 }
+
+/* MEDIA ADJUSTMENT */

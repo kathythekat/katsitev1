@@ -1,3 +1,21 @@
+//NAVIGATION BAR//
+
+const navClicker = document.getElementById("nav-icon-click");
+
+const openNavBar = document.getElementById("nav-links");
+
+// const screenClicker = document.getElementById("header");
+
+// const contentClicker = document.getElementById("mountain");
+
+navClicker.addEventListener('click', function() {
+    if (openNavBar.classList.contains('nav-links--open')) {
+        openNavBar.classList.remove('nav-links--open');
+    } else {
+        openNavBar.classList.add('nav-links--open');
+    }
+}) 
+
 // get the button, const buttonEl
 const dogClicker = document.getElementById('dog-clicker')
 // buttonEl.addEventListener
@@ -39,21 +57,6 @@ nurseClicker.addEventListener('click', function() {
 
 nurseModal.addEventListener('click', function() {
     nurseModal.classList.remove('nurse-modal--open')
-})
-
-
-//NAVIGATION BAR//
-
-const navClicker = document.getElementById("nav-icon-click");
-
-const openNavBar = document.getElementById("nav-links");
-
-navClicker.addEventListener('click', function() {
-    if (openNavBar.classList.contains('nav-links--open')) {
-        openNavBar.classList.remove('nav-links--open');
-    } else {
-        openNavBar.classList.add('nav-links--open');
-    }
 })
 
 
