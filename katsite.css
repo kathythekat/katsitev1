@@ -293,17 +293,18 @@ button {
 /* MEDIA ADJUSTMENT */
 
 @media (max-width: 1024px) {
-.name {
+  .name {
     font-size: 54px;
 }
 /* MEDIA ADJUSTMENT */
-
+.mountain-svg {
+  width: 50vh;
+}
 .mountain-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 /* MEDIA ADJUSTMENT */
 .nav-links--open {
   display: inline; 
@@ -311,7 +312,6 @@ button {
 .nav-links-container {
   position: absolute;
 }
-
 .home-button {
   margin-top: 20px;
 }
@@ -348,6 +348,9 @@ button {
     margin-top: 12px;
   }
    
+} 
+.main-container {
+  height: 100vh;
 }
 
   /*MEDIA FOR MODAL */
