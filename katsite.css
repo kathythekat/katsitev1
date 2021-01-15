@@ -29,8 +29,6 @@ body {
   display: none;
 }
 
-.nav-bar {
-}
 
 .nav-links--open {
   display: inline-flex
@@ -85,6 +83,11 @@ body {
   flex: 1;
 }
 
+.about-main-container {
+  height:100vh;
+  background-color: #EEE;
+}
+
 .container2 {
     display: flex;
     justify-content: center;
@@ -99,7 +102,7 @@ body {
 
 .picture-1 {
   border-radius: 12px;
-  border: solid #637865 4px;
+  border: solid white 4px;
 }
 
 .content-box p {
@@ -125,8 +128,8 @@ body {
   border: none;
   padding: 0;
   font-size:32px;
-  background-color: white;
-  color: #F08080;
+  background-color: #EEE;
+  color: #F1948A;
 }
 .enlarged-button:hover {
     font-size: 36px;
@@ -145,15 +148,14 @@ body {
   width: 86px;  
 }
 
-
   /* Modal Content (Image) */
   .popup-pic {
     border: solid white 3px;
     border-radius: 10px;
     display:block;
-    margin: 5% auto;
-    max-height: 800px;
-    max-width: 600px;
+    margin: 4% auto;
+    max-height: 600px;
+    max-width: 400px;
     animation: zoomie ease-in 500ms;
   }
   @keyframes zoomie {
@@ -164,13 +166,6 @@ body {
       opacity: 1;   
     }
   } 
-
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 800px){
-    .fancy-modal-container, .bike-modal-container, .nurse-modal.container {
-      width: 100%;
-    }
-  }
 
   .fancy-modal-container {
     display: none; /* Hidden by default */
@@ -214,9 +209,9 @@ body {
     border: solid white 3px;
     border-radius: 10px;
     display:block;
-    margin: 5% auto;
-    max-height: 800px;
-    max-width: 600px;
+    margin: 4% auto;
+    max-height: 600px;
+    max-width: 400px;
     animation: zoomie ease-in 500ms;
   }
   @keyframes zoomie {
@@ -251,10 +246,11 @@ body {
   border: solid white 3px;
   border-radius: 10px;
   display:block;
-  margin: 5% auto;
-  max-height: 800px;
-  max-width: 600px;
+  margin: 4% auto;
+  max-height: 600px;
+  max-width: 400px;
   animation: zoomie ease-in 500ms;
+  
 }
 @keyframes zoomie {
   0% {
@@ -353,5 +349,18 @@ button {
   }
    
 }
+
+  /*MEDIA FOR MODAL */
+  
+  @media only screen and (max-width: 800px){
+    .fancy-modal-container, .bike-modal-container, .nurse-modal.container {
+      width: 100%;
+    }
+    .popup-pic, .bike-pic, .nurse-pic {
+      height: 500px;
+      width:360px;
+      margin: 40% auto;
+  }
+  /*MEDIA FOR MODAL */
 
 /* MEDIA ADJUSTMENT */
