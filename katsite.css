@@ -81,6 +81,7 @@ display: none;
   flex-direction: column;
   align-items: center;
   flex: 1;
+  margin-top: 44px;
 }
 
 .about-main-container {
@@ -101,7 +102,7 @@ display: none;
 
 .picture-1 {
   border-radius: 12px;
-  border: dashed #EED1C6 4px;
+  border: solid #EED1C6 4px;
 }
 
 .content-box p {
@@ -117,7 +118,7 @@ display: none;
 .enlarged-button {
   font-family: Quicksand, sans-serif;
   padding: 0;
-  font-size:26px;
+  font-size:28px;
   color:#637865;
   border: none;
   border-bottom: dashed #EED1C6 2px;
@@ -248,19 +249,19 @@ display: none;
     margin-top: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 12px;
+    margin-bottom: 40%;
 }
 
 .instagram-icon, .github-icon, .email-icon {
     margin-left: 20px;
-  
+
 }
 
 a:hover {
    color: #EED1C6;
 }
 
-.social-icon:hover, .nav-icon:hover {
+.social-icon:hover, .nav-icon:hover, .home-icon:hover {
   fill:#EED1C6;
 }
 
