@@ -4,26 +4,26 @@ const navClicker = document.getElementById("nav-icon-click");
 
 const openNavBar = document.getElementById("nav-links");
 
-// const screenClicker = document.getElementById("header");
-
-// const contentClicker = document.getElementById("mountain");
-
-navClicker.addEventListener('click', function() {
+navClicker.addEventListener('click', function(event) {
+    event.stopPropagation();
     if (openNavBar.classList.contains('nav-links--open')) {
-        openNavBar.classList.remove('nav-links--open');
+        closeNav();  
     } else {
         openNavBar.classList.add('nav-links--open');
+        document.addEventListener('click', closeNav);
     }
-}) 
+})
 
-// get the button, const buttonEl
+function closeNav() {
+    document.removeEventListener('click', closeNav);
+    openNavBar.classList.remove('nav-links--open');
+}
+
+
+
 const dogClicker = document.getElementById('dog-clicker')
-// buttonEl.addEventListener
+
 dogClicker.addEventListener('click', function() {
-    // open modal
-    //   get the modal, modalEl
-    const modalEl = document.getElementById('modal')
-    //   add display block to modalEl --> open the modal
     modalEl.classList.add('modal--open')
 })
 
@@ -31,7 +31,6 @@ const modalEl = document.getElementById('modal');
 modalEl.addEventListener('click', function() {
     modalEl.classList.remove('modal--open')
 })
-
 
 //BIKE MODAL//
 

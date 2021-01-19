@@ -16,12 +16,11 @@ body {
  
 .name {
     font-size: 80px;
-    border-bottom: dashed #EED1C6 2px;
+  
 }
 /* NAVIGATION MENU STYLE */
 
 .nav-icon:hover {
-  opacity: 0.4;
   cursor: pointer;
 }
 
@@ -29,15 +28,14 @@ body {
 display: none;
 }
 
-
 .nav-links--open {
-  display: inline-flex
+  display: inline-flex;
 
 }
 .nav-links-container {
   position: absolute;
   padding-top: 18px;
-  animation: navbar ease-in 500ms;
+  animation: navbar ease-in-out 400ms;
   padding-left:20px;
 }
 
@@ -69,7 +67,7 @@ display: none;
   font-size: 24px;
   display: block;
   margin-right: 32px;
-  border-bottom: dashed #EED1C6 2px;
+  border-bottom: dashed #F69981 2px;
   
 }
 
@@ -88,25 +86,31 @@ display: none;
   height:100vh;
 }
 
+.about-header {
+  display: flex;
+  justify-content: center;
+  font-family: Itim, sans-serif;
+  color: #F69981;
+  font-size: 60px;
+  margin: 32px;
+}
 .container2 {
     display: flex;
-    justify-content: center;
-    margin-top: 36px;  
+    justify-content: center; 
 }
 
 .content-box {
     max-width: 768px;
     padding: 0;
     margin-top:0;
+   
 }
 
 .picture-1 {
   border-radius: 12px;
-  border: solid #EED1C6 4px;
 }
 
 .content-box p {
-    margin-top: 50px;
     padding: 0;
     font-family: Quicksand, sans-serif;
     color: #637865;
@@ -116,18 +120,18 @@ display: none;
 }
 
 .enlarged-button {
-  font-family: Quicksand, sans-serif;
+  font-family: Itim, sans-serif;
   padding: 0;
-  font-size:28px;
+  font-size:32px;
   color:#637865;
   border: none;
-  border-bottom: dashed #EED1C6 2px;
+  border-bottom: dashed #F69981 2px;
   background-color: white;
 }
 .enlarged-button:hover {
     padding: 0;
-    color: #EED1C6;
-    border-bottom: dashed #EED1C6 2px;
+    color: #F69981;
+    border-bottom: dashed #F69981 2px;
 }
 
 
@@ -258,11 +262,12 @@ display: none;
 }
 
 a:hover {
-   color: #EED1C6;
+   color: #F69981;
+   cursor: pointer;
 }
 
 .social-icon:hover, .nav-icon:hover, .home-icon:hover {
-  fill:#EED1C6;
+  fill: #F69981;
 }
 
 button {
@@ -297,19 +302,23 @@ button {
 .nav-links--open {
   display: inline; 
 }
-.nav-links-container {
-  position: absolute;
-}
+
 .home-button {
   margin-top: 20px;
+}
+.nav-links-container {
+  position: absolute;
 }
 /* MEDIA ADJUSTMENT */
 .nav-links-container a {
   color: #637865;
-  padding-top:12px;
   text-decoration: none;
   font-size: 18px;
   display: inline-block;
+}
+
+.about-header {
+  margin: 12px;
 }
 /* MEDIA ADJUSTMENT */
   .container2 {
@@ -317,7 +326,6 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
     /* The width is 100%, when the viewport is 800px or smaller */
   }
   /* MEDIA ADJUSTMENT */
