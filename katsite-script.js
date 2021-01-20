@@ -1,19 +1,35 @@
-// get the button, const buttonEl
+//NAVIGATION BAR//
+
+const navClicker = document.getElementById("nav-icon-click");
+
+const openNavBar = document.getElementById("nav-links");
+
+navClicker.addEventListener('click', function(event) {
+    event.stopPropagation();
+    if (openNavBar.classList.contains('nav-links--open')) {
+        closeNav();  
+    } else {
+        openNavBar.classList.add('nav-links--open');
+        document.addEventListener('click', closeNav);
+    }
+})
+
+function closeNav() {
+    document.removeEventListener('click', closeNav);
+    openNavBar.classList.remove('nav-links--open');
+}
+
+//DOG MODAL//
 const dogClicker = document.getElementById('dog-clicker')
-// buttonEl.addEventListener
+
 dogClicker.addEventListener('click', function() {
-    // open modal
-    //   get the modal, modalEl
-    const modalEl = document.getElementById('modal')
-    //   add display block to modalEl --> open the modal
-    modalEl.classList.add('modal--open')
+    modalEl.classList.add('dog-modal--open')
 })
 
-const modalEl = document.getElementById('modal');
+const modalEl = document.getElementById('dog-modal');
 modalEl.addEventListener('click', function() {
-    modalEl.classList.remove('modal--open')
+    modalEl.classList.remove('dog-modal--open')
 })
-
 
 //BIKE MODAL//
 
@@ -39,21 +55,6 @@ nurseClicker.addEventListener('click', function() {
 
 nurseModal.addEventListener('click', function() {
     nurseModal.classList.remove('nurse-modal--open')
-})
-
-
-//NAVIGATION BAR//
-
-const navClicker = document.getElementById("nav-icon-click");
-
-const openNavBar = document.getElementById("nav-links");
-
-navClicker.addEventListener('click', function() {
-    if (openNavBar.classList.contains('nav-links--open')) {
-        openNavBar.classList.remove('nav-links--open');
-    } else {
-        openNavBar.classList.add('nav-links--open');
-    }
 })
 
 

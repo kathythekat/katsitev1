@@ -1,6 +1,6 @@
 body {
+  color:#637865;
     font-family: Quicksand, sans-serif;
-    color:#637865;
     padding: 0;
     margin: 0;
 }
@@ -15,6 +15,7 @@ body {
 }
  
 .name {
+    font-family: Quicksand, sans-serif;
     font-size: 80px;
   
 }
@@ -79,7 +80,12 @@ display: none;
   flex-direction: column;
   align-items: center;
   flex: 1;
-  margin-top: 44px;
+  margin-top: 12px;
+}
+
+.mountain-svg {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 
 .about-main-container {
@@ -89,10 +95,11 @@ display: none;
 .about-header {
   display: flex;
   justify-content: center;
-  font-family: Itim, sans-serif;
-  color: #F69981;
-  font-size: 60px;
-  margin: 32px;
+  font-family: Quicksand, sans-serif;
+  color: #637865;
+  font-size: 68px;
+  margin-bottom: 28px;
+  margin-top:8px;
 }
 .container2 {
     display: flex;
@@ -100,23 +107,25 @@ display: none;
 }
 
 .content-box {
-    max-width: 768px;
-    padding: 0;
-    margin-top:0;
-   
+    max-width: 800px;
+    border: dashed #F69981 3px;
+    border-radius: 12px;
+    margin: 8px;
+    box-sizing: border-box;
 }
-
 .picture-1 {
   border-radius: 12px;
 }
 
 .content-box p {
-    padding: 0;
     font-family: Quicksand, sans-serif;
     color: #637865;
     font-size: 24px;
-    margin-left: 30px;
-    line-height: 56px;
+    line-height: 54px;
+    padding: 8px 24px;
+    margin-top: 0;
+    box-sizing: border-box;
+
 }
 
 .enlarged-button {
@@ -136,13 +145,16 @@ display: none;
 
 
   /* Modal Content (Image) */
-  .popup-pic {
+
+  /*DOG MODAL*/
+
+  .dog-pic {
     border: solid white 3px;
     border-radius: 10px;
     display:block;
     margin: 4% auto;
-    max-height: 600px;
-    max-width: 400px;
+    max-height: 640px;
+    max-width: 440px;
     animation: zoomie ease-in 500ms;
   }
   @keyframes zoomie {
@@ -154,7 +166,7 @@ display: none;
     }
   } 
 
-  .fancy-modal-container {
+  .dog-modal-container {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -168,7 +180,7 @@ display: none;
     background-color: rgba(0,0,0,0.5); /* opacity ]*/ 
   }
 
-  .modal--open {
+  .dog-modal--open {
     display: block;
   }
   
@@ -197,8 +209,8 @@ display: none;
     border-radius: 10px;
     display:block;
     margin: 4% auto;
-    max-height: 600px;
-    max-width: 400px;
+    max-height: 640px;
+    max-width: 440px;
     animation: zoomie ease-in 500ms;
   }
   @keyframes zoomie {
@@ -211,6 +223,7 @@ display: none;
   } 
 
 /* NURSE MODAL*/
+
 .nurse-modal-container {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -234,8 +247,8 @@ display: none;
   border-radius: 10px;
   display:block;
   margin: 4% auto;
-  max-height: 600px;
-  max-width: 400px;
+  max-height: 640px;
+  max-width: 440px;
   animation: zoomie ease-in 500ms;
   
 }
@@ -248,6 +261,7 @@ display: none;
   }
 } 
 
+/* Icons style */
 
 .link-icons {
     margin-top: 20px;
@@ -277,8 +291,8 @@ button {
 .projects-container {
   display:flex;
   justify-content: center;
+  text-align: center;
 }
-
 
 
 
@@ -318,7 +332,7 @@ button {
 }
 
 .about-header {
-  margin: 12px;
+  margin: 16px;
 }
 /* MEDIA ADJUSTMENT */
   .container2 {
@@ -338,13 +352,15 @@ button {
   }
   /* MEDIA ADJUSTMENT */
   .content-box p{
-    padding: 12px;
-    font-size: 24px;
+    padding: 12px 20px;
+    font-size: 20px;
     line-height: 40px;
     margin-top: 12px;
   }
    
-} 
+.enlarged-button {
+  font-size: 24px;
+}
 .main-container {
   height: 100vh;
 }
@@ -352,12 +368,12 @@ button {
   /*MEDIA FOR MODAL */
   
   @media only screen and (max-width: 800px){
-    .fancy-modal-container, .bike-modal-container, .nurse-modal.container {
+    .dog-modal-container, .bike-modal-container, .nurse-modal--open {
       width: 100%;
     }
-    .popup-pic, .bike-pic, .nurse-pic {
-      height: 500px;
-      width:360px;
+    .dog-pic, .bike-pic, .nurse-pic {
+      height: 480px;
+      width:344px;
       margin: 40% auto;
   }
   /*MEDIA FOR MODAL */
