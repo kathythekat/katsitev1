@@ -6,15 +6,16 @@
   .about-header {
     display: flex;
     justify-content: center;
-    font-family: Itim, sans-serif;
     color: #637865;
     font-size: 64px;
-    margin-top:8px;
+    margin: 16px 0;
+    @media (max-width: $mobile-breakpoint) {
+      margin: 0;
+    }
   }
   .about-content {
       display: flex;
       justify-content: center; 
-      margin-top:20px;
 
       @media (max-width: $mobile-breakpoint) {
         display: flex;
@@ -46,17 +47,19 @@
         padding: 24px;
         margin-top: 0;
         box-sizing: border-box;
+
         @media (max-width: $mobile-breakpoint) {
           padding: 12px 20px;
           font-size: 20px;
           line-height: 40px;
           margin-top: 12px;
         }
+
       }
   }
 
-  .picture-1 {
-    max-height: 480px;
+  .self-portrait {
+    max-height: 520px;
     border-radius: 12px;
     @media (max-width: $mobile-breakpoint) {
       max-width: 320px;
@@ -67,11 +70,10 @@
       margin: 24px;
     }
   }
-  
-  .enlarged-button {
-    font-family: Itim, sans-serif;
+
+  .modal-button {
     padding: 0;
-    font-size:32px;
+    font-size:28px;
     color:#637865;
     border: none;
     border-bottom: dashed #F69981 2px;
@@ -82,29 +84,18 @@
       border-bottom: dashed #F69981 2px;
     }
   }
-    /* Modal Content (Image) */
   
-    /*DOG MODAL*/
-  
-    .dog-pic {
-      border: solid white 3px;
-      border-radius: 10px;
-      display:block;
-      margin: 4% auto;
-      max-height: 640px;
-      max-width: 440px;
-      animation: zoomie ease-in 500ms;
+    /* Modal Content*/
+
+    %small-modal {
+      @media (max-width:$mobile-breakpoint) {
+        height:480px;
+        width:344px;
+        margin: 40% auto;
+      }
     }
-    @keyframes zoomie {
-      0% {
-        opacity: 0;    
-      }
-      100% {
-        opacity: 1;   
-      }
-    } 
-  
-    .dog-modal-container {
+
+    .modal-container {
       display: none; 
       position: fixed; 
       z-index: 1; 
@@ -117,32 +108,8 @@
       background-color: rgb(0,0,0);
       background-color: rgba(0,0,0,0.5); 
     }
-  
-    .dog-modal--open {
-      display: block;
-    }
-    
-    /*BIKE MODAL */
-  
-    .bike-modal-container {
-      display: none; 
-      position: fixed; 
-      z-index: 1; 
-      padding-bottom: 50px; 
-      left: 0;
-      top: 0;
-      width: 100%; 
-      height: 100%; 
-      overflow: auto; 
-      background-color: rgb(0,0,0); 
-      background-color: rgba(0,0,0,0.5); 
-    }
-    
-    .bike-modal--open {
-      display: block;
-    }
-  
-    .bike-pic {
+
+    .modal-image {
       border: solid white 3px;
       border-radius: 10px;
       display:block;
@@ -150,51 +117,23 @@
       max-height: 640px;
       max-width: 440px;
       animation: zoomie ease-in 500ms;
+        @keyframes zoomie {
+          0% {
+            opacity: 0;    
+          }
+          100% {
+            opacity: 1;   
+          }
+        }
+
+      @extend %small-modal;
     }
-    @keyframes zoomie {
-      0% {
-        opacity: 0;    
-      }
-      100% {
-        opacity: 1;   
-      }
-    } 
-  
-  /* NURSE MODAL*/
-  
-  .nurse-modal-container {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-bottom: 50px; 
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.5);   
-  }
-  
-  .nurse-modal--open {
-    display: block;
-  }
-  
-  .nurse-pic {
-    border: solid white 3px;
-    border-radius: 10px;
-    display:block;
-    margin: 4% auto;
-    max-height: 640px;
-    max-width: 440px;
-    animation: zoomie ease-in 500ms;
     
-  }
-  @keyframes zoomie {
-    0% {
-      opacity: 0;    
+    .modal--open {
+      display: block;
     }
-    100% {
-      opacity: 1;   
-    }
-  } 
+
+  
+ 
+    
+ 

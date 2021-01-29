@@ -10,13 +10,14 @@
 .nav-links-container {
     display: none;
     position: absolute;
-    padding-top: 18px;
+    padding-top: 16px;
     animation: navbar ease-in-out 400ms;
     padding-left:20px;
     &.nav-links--open {
       display: inline-flex;
     }
     a {
+      font-weight: bold;
       color: #637865;
       padding-top:4px;
       padding-bottom: 8px;

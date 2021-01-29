@@ -21,14 +21,18 @@ function closeNav() {
 
 
 //project - hover effect
+const mediaLimit = window.matchMedia('(max-width: 1200px)');
+
 const memeBox = document.getElementById('memeProject')
+
 memeBox.addEventListener('mouseenter', showMeme);
+
+if (mediaLimit.matches === true) {
+    memeBox.removeEventListener('mouseenter', showMeme);
+}
 
 function showMeme() {
     const catImgSrc = 'images/catmeme.png';
-
-    // const memeHover = document.createElement('div');
-    // memeHover.classList.add('showMeme');
     memeBox.innerText='';
     memeBox.style.backgroundImage = `url("${catImgSrc}")`;
     memeBox.classList.add('showMeme')

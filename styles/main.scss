@@ -1,7 +1,9 @@
+
 $mobile-breakpoint: 800px;
 $main-font: Quicksand, sans-serif;
 $primary-color: #637865;
 $secondary-color: #F69981;
+
 
 @import "./globals.scss";
 @import "./about.scss";
@@ -9,3 +11,4 @@ $secondary-color: #F69981;
 @import "./navigation.scss";
 @import "./projects.scss";
 @import "./style.scss";
+

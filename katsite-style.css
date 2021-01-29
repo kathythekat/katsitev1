@@ -13,11 +13,11 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  height: 100%;
+  height: 100vh;
 }
 @media (max-width: 800px) {
   body {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -32,16 +32,19 @@ body {
 .about-header {
   display: flex;
   justify-content: center;
-  font-family: Itim, sans-serif;
   color: #637865;
   font-size: 64px;
-  margin-top: 8px;
+  margin: 16px 0;
+}
+@media (max-width: 800px) {
+  .about-header {
+    margin: 0;
+  }
 }
 
 .about-content {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
 }
 @media (max-width: 800px) {
   .about-content {
@@ -86,59 +89,47 @@ body {
   }
 }
 
-.picture-1 {
-  max-height: 480px;
+.self-portrait {
+  max-height: 520px;
   border-radius: 12px;
 }
 @media (max-width: 800px) {
-  .picture-1 {
+  .self-portrait {
     max-width: 320px;
     max-height: 400px;
     margin: 20px;
   }
 }
 @media (max-width: 1024px) {
-  .picture-1 {
+  .self-portrait {
     margin: 24px;
   }
 }
 
-.enlarged-button {
-  font-family: Itim, sans-serif;
+.modal-button {
   padding: 0;
-  font-size: 32px;
+  font-size: 28px;
   color: #637865;
   border: none;
   border-bottom: dashed #F69981 2px;
   background-color: white;
 }
-.enlarged-button:hover {
+.modal-button:hover {
   padding: 0;
   color: #F69981;
   border-bottom: dashed #F69981 2px;
 }
 
-/* Modal Content (Image) */
-/*DOG MODAL*/
-.dog-pic {
-  border: solid white 3px;
-  border-radius: 10px;
-  display: block;
-  margin: 4% auto;
-  max-height: 640px;
-  max-width: 440px;
-  animation: zoomie ease-in 500ms;
+/* Modal Content*/
+@media (max-width: 800px) {
+  .modal-image {
+    height: 480px;
+    width: 344px;
+    margin: 40% auto;
+  }
 }
 
-@keyframes zoomie {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.dog-modal-container {
+.modal-container {
   display: none;
   position: fixed;
   z-index: 1;
@@ -152,30 +143,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.dog-modal--open {
-  display: block;
-}
-
-/*BIKE MODAL */
-.bike-modal-container {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-bottom: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.bike-modal--open {
-  display: block;
-}
-
-.bike-pic {
+.modal-image {
   border: solid white 3px;
   border-radius: 10px;
   display: block;
@@ -184,7 +152,6 @@ body {
   max-width: 440px;
   animation: zoomie ease-in 500ms;
 }
-
 @keyframes zoomie {
   0% {
     opacity: 0;
@@ -193,43 +160,11 @@ body {
     opacity: 1;
   }
 }
-/* NURSE MODAL*/
-.nurse-modal-container {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-bottom: 50px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.5);
-}
 
-.nurse-modal--open {
+.modal--open {
   display: block;
 }
 
-.nurse-pic {
-  border: solid white 3px;
-  border-radius: 10px;
-  display: block;
-  margin: 4% auto;
-  max-height: 640px;
-  max-width: 440px;
-  animation: zoomie ease-in 500ms;
-}
-
-@keyframes zoomie {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .main-container {
   height: 100vh;
   display: flex;
@@ -270,13 +205,12 @@ body {
 }
 
 .link-icons {
-  margin-top: 20px;
+  margin: 20px;
   display: flex;
   justify-content: center;
-  margin-bottom: 40%;
 }
 
-.instagram-icon, .github-icon, .email-icon {
+.social-icon {
   margin-left: 20px;
 }
 
@@ -289,8 +223,14 @@ body {
   text-align: center;
   bottom: 0;
   font-size: 18px;
-  padding: 16px;
+  padding: 20px;
   width: 100%;
+}
+@media (max-width: 800px) {
+  .footer {
+    font-size: 16px;
+    padding: 12px;
+  }
 }
 
 .nav-icon {
@@ -304,7 +244,7 @@ body {
 .nav-links-container {
   display: none;
   position: absolute;
-  padding-top: 18px;
+  padding-top: 16px;
   animation: navbar ease-in-out 400ms;
   padding-left: 20px;
 }
@@ -312,6 +252,7 @@ body {
   display: inline-flex;
 }
 .nav-links-container a {
+  font-weight: bold;
   color: #637865;
   padding-top: 4px;
   padding-bottom: 8px;
@@ -361,13 +302,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 20px;
   font-family: Quicksand, sans-serif;
   color: #637865;
   border: dashed #F69981 3px;
   width: 300px;
   height: 200px;
-  font-size: 30px;
+  font-size: 24px;
   border-radius: 12px;
   text-decoration: none;
 }
@@ -384,45 +325,5 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-
-/* MEDIA ADJUSTMENT */
-/* @media screen and (max-width: 800px) {
-
-  .container2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .picture-1 {
-    max-width: 320px;
-    max-height: 420px;
-    margin-left: 12px;
-    margin-right: 12px;
-    margin-bottom: 12px;
-  }
-  .content-box p{
-    padding: 12px 20px;
-    font-size: 20px;
-    line-height: 40px;
-    margin-top: 12px;
-  }
-} */
-/* 
-.enlarged-button {
-  font-size: 24px;
-}
-.main-container {
-  height: 100vh;
-}
-
-.dog-modal-container, .bike-modal-container, .nurse-modal--open {
-  width: 100%;
-}
-.dog-pic, .bike-pic, .nurse-pic {
-  height: 480px;
-  width:344px;
-  margin: 40% auto;
-} */
 
 /*# sourceMappingURL=katsite-style.css.map */

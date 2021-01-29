@@ -17,7 +17,6 @@
       @media(max-width: $mobile-breakpoint) {
         font-size: 54px;
       }
-
   }
 
 .home-container {
@@ -38,18 +37,17 @@
 }
 
 .link-icons {
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 40%;
 }
 
-.instagram-icon, .github-icon, .email-icon {
-    margin-left: 20px;
+.social-icon {
+  margin-left: 20px;
 }
 
 .social-icon:hover, .nav-icon:hover, .home-icon:hover {
-  fill: #F69981;
+  fill: $secondary-color; 
 }
 
 .footer {
@@ -57,6 +55,11 @@
   text-align: center;
   bottom: 0;
   font-size: 18px;
-  padding:16px;
+  padding:20px;
   width: 100%;
+  @media (max-width:$mobile-breakpoint){
+    font-size: 16px;
+    padding: 12px;
+    
+  }
 }

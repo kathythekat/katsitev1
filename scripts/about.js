@@ -25,11 +25,11 @@ const dogModal = document.getElementById('dog-modal');
 const dogClicker = document.getElementById('dog-clicker')
 
 dogClicker.addEventListener('click', function() {
-    dogModal.classList.add('dog-modal--open')
+    dogModal.classList.add('modal--open')
 })
 
 dogModal.addEventListener('click', function() {
-    dogModal.classList.remove('dog-modal--open')
+    dogModal.classList.remove('modal--open')
 })
 
 //BIKE MODAL//
@@ -38,12 +38,12 @@ const bikeClicker = document.getElementById('bike-clicker')
 // buttonEl.addEventListener
 bikeClicker.addEventListener('click', function() {
     const bikeModal = document.getElementById('bike-modal')
-    bikeModal.classList.add('bike-modal--open')
+    bikeModal.classList.add('modal--open')
 })
 
 const bikeModal = document.getElementById('bike-modal');
 bikeModal.addEventListener('click', function() {
-    bikeModal.classList.remove('bike-modal--open')
+    bikeModal.classList.remove('modal--open')
 })
 
 //NURSE MODAL//
@@ -51,11 +51,11 @@ bikeModal.addEventListener('click', function() {
 const nurseClicker = document.getElementById('nurse-clicker')
 const nurseModal = document.getElementById('nurse-modal')
 nurseClicker.addEventListener('click', function() { 
-    nurseModal.classList.add('nurse-modal--open')
+    nurseModal.classList.add('modal--open')
 })
 
 nurseModal.addEventListener('click', function() {
-    nurseModal.classList.remove('nurse-modal--open')
+    nurseModal.classList.remove('modal--open')
 })
 
 
