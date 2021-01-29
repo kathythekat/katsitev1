@@ -1,0 +1,200 @@
+
+.about-main-container {
+    height:100vh;
+  }
+
+  .about-header {
+    display: flex;
+    justify-content: center;
+    font-family: Itim, sans-serif;
+    color: #637865;
+    font-size: 64px;
+    margin-top:8px;
+  }
+  .about-content {
+      display: flex;
+      justify-content: center; 
+      margin-top:20px;
+
+      @media (max-width: $mobile-breakpoint) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @media (max-width: 1024px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+  }
+  
+  .description-box {
+      max-width: 800px;
+      border: dashed #F69981 3px;
+      border-radius: 12px;
+      margin: 8px;
+      box-sizing: border-box;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-family: Quicksand, sans-serif;
+        color: #637865;
+        font-size: 24px;
+        line-height: 54px;
+        padding: 24px;
+        margin-top: 0;
+        box-sizing: border-box;
+        @media (max-width: $mobile-breakpoint) {
+          padding: 12px 20px;
+          font-size: 20px;
+          line-height: 40px;
+          margin-top: 12px;
+        }
+      }
+  }
+
+  .picture-1 {
+    max-height: 480px;
+    border-radius: 12px;
+    @media (max-width: $mobile-breakpoint) {
+      max-width: 320px;
+      max-height: 400px;
+      margin: 20px;
+    }
+    @media (max-width:1024px) {
+      margin: 24px;
+    }
+  }
+  
+  .enlarged-button {
+    font-family: Itim, sans-serif;
+    padding: 0;
+    font-size:32px;
+    color:#637865;
+    border: none;
+    border-bottom: dashed #F69981 2px;
+    background-color: white;
+    &:hover {
+      padding: 0;
+      color: #F69981;
+      border-bottom: dashed #F69981 2px;
+    }
+  }
+    /* Modal Content (Image) */
+  
+    /*DOG MODAL*/
+  
+    .dog-pic {
+      border: solid white 3px;
+      border-radius: 10px;
+      display:block;
+      margin: 4% auto;
+      max-height: 640px;
+      max-width: 440px;
+      animation: zoomie ease-in 500ms;
+    }
+    @keyframes zoomie {
+      0% {
+        opacity: 0;    
+      }
+      100% {
+        opacity: 1;   
+      }
+    } 
+  
+    .dog-modal-container {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-bottom: 50px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.5); 
+    }
+  
+    .dog-modal--open {
+      display: block;
+    }
+    
+    /*BIKE MODAL */
+  
+    .bike-modal-container {
+      display: none; 
+      position: fixed; 
+      z-index: 1; 
+      padding-bottom: 50px; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.5); 
+    }
+    
+    .bike-modal--open {
+      display: block;
+    }
+  
+    .bike-pic {
+      border: solid white 3px;
+      border-radius: 10px;
+      display:block;
+      margin: 4% auto;
+      max-height: 640px;
+      max-width: 440px;
+      animation: zoomie ease-in 500ms;
+    }
+    @keyframes zoomie {
+      0% {
+        opacity: 0;    
+      }
+      100% {
+        opacity: 1;   
+      }
+    } 
+  
+  /* NURSE MODAL*/
+  
+  .nurse-modal-container {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-bottom: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.5);   
+  }
+  
+  .nurse-modal--open {
+    display: block;
+  }
+  
+  .nurse-pic {
+    border: solid white 3px;
+    border-radius: 10px;
+    display:block;
+    margin: 4% auto;
+    max-height: 640px;
+    max-width: 440px;
+    animation: zoomie ease-in 500ms;
+    
+  }
+  @keyframes zoomie {
+    0% {
+      opacity: 0;    
+    }
+    100% {
+      opacity: 1;   
+    }
+  } 

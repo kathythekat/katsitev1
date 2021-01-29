@@ -19,16 +19,17 @@ function closeNav() {
     openNavBar.classList.remove('nav-links--open');
 }
 
+
 //DOG MODAL//
+const dogModal = document.getElementById('dog-modal');
 const dogClicker = document.getElementById('dog-clicker')
 
 dogClicker.addEventListener('click', function() {
-    modalEl.classList.add('dog-modal--open')
+    dogModal.classList.add('dog-modal--open')
 })
 
-const modalEl = document.getElementById('dog-modal');
-modalEl.addEventListener('click', function() {
-    modalEl.classList.remove('dog-modal--open')
+dogModal.addEventListener('click', function() {
+    dogModal.classList.remove('dog-modal--open')
 })
 
 //BIKE MODAL//
@@ -56,6 +57,10 @@ nurseClicker.addEventListener('click', function() {
 nurseModal.addEventListener('click', function() {
     nurseModal.classList.remove('nurse-modal--open')
 })
+
+
+
+
 
 
 
