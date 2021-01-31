@@ -3,7 +3,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
   }
   
   .header-container {
@@ -17,6 +16,9 @@
       margin: 0;
       margin-bottom: 12px;
       @media(max-width: $mobile-breakpoint) {
+        font-size: 48px;
+      }
+      @media (max-width:850px) and (orientation:landscape) {
         font-size: 54px;
       }
   }
@@ -30,6 +32,9 @@
 
 .mountain-container {
   width: 50vh;
+  @media (max-width:850px) and (orientation:landscape) {
+    width: 40vw;
+  }
 }
 
 .mountain-svg {
@@ -39,7 +44,6 @@
 }
 
 .link-icons {
-    margin: 20px;
     display: flex;
     justify-content: center;
 }
@@ -57,6 +61,15 @@
   text-align: center;
   bottom: 0;
   font-size: 18px;
-  padding:20px;
+  padding:16px;
   width: 100%;
+  @media (max-width:$mobile-breakpoint) {
+    padding: 8px;
+  }
+  @media (max-width:374px) {
+    display:none;
+  }
+  @media (max-width:850px) and (orientation:landscape) {
+    display: none;
+  }
 }
