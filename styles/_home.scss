@@ -12,8 +12,9 @@
   .name {
       text-align:center;
       font-family: Quicksand, sans-serif;
-      font-size: 80px;  
+      font-size: 68px;  
       margin: 0;
+      margin-bottom: 12px;
       @media(max-width: $mobile-breakpoint) {
         font-size: 54px;
       }
@@ -57,9 +58,4 @@
   font-size: 18px;
   padding:20px;
   width: 100%;
-  @media (max-width:$mobile-breakpoint){
-    font-size: 16px;
-    padding: 12px;
-    
-  }
 }

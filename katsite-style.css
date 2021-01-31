@@ -96,7 +96,7 @@ body {
 @media (max-width: 800px) {
   .self-portrait {
     max-width: 320px;
-    max-height: 400px;
+    max-height: 420px;
     margin: 20px;
   }
 }
@@ -118,6 +118,11 @@ body {
   padding: 0;
   color: #F69981;
   border-bottom: dashed #F69981 2px;
+}
+@media (max-width: 800px) {
+  .modal-button {
+    font-size: 24px;
+  }
 }
 
 /* Modal Content*/
@@ -178,8 +183,9 @@ body {
 .name {
   text-align: center;
   font-family: Quicksand, sans-serif;
-  font-size: 80px;
+  font-size: 68px;
   margin: 0;
+  margin-bottom: 12px;
 }
 @media (max-width: 800px) {
   .name {
@@ -226,12 +232,6 @@ body {
   padding: 20px;
   width: 100%;
 }
-@media (max-width: 800px) {
-  .footer {
-    font-size: 16px;
-    padding: 12px;
-  }
-}
 
 .nav-icon {
   margin-left: 16px;
@@ -246,7 +246,7 @@ body {
   position: absolute;
   padding-top: 16px;
   animation: navbar ease-in-out 400ms;
-  padding-left: 20px;
+  padding-left: 16px;
 }
 .nav-links-container.nav-links--open {
   display: inline-flex;
@@ -258,16 +258,11 @@ body {
   padding-bottom: 8px;
   text-decoration: none;
   font-size: 20px;
-  margin-right: 32px;
+  margin-right: 24px;
   border-bottom: dashed #F69981 2px;
 }
 .nav-links-container a:hover {
   color: #F69981;
-}
-@media (max-width: 800px) {
-  .nav-links-container a {
-    font-size: 20px;
-  }
 }
 
 @keyframes navbar {
