@@ -31,7 +31,7 @@
 }
 
 .mountain-container {
-  width: 50vh;
+  width: 54vh;
   @media (max-width:850px) and (orientation:landscape) {
     width: 40vw;
   }
@@ -39,37 +39,47 @@
 
 .mountain-svg {
   max-width: 100%;
-  margin-top: 12px;
   margin-bottom: 12px;
-}
-
-.link-icons {
-    display: flex;
-    justify-content: center;
-}
-
-.social-icon {
-  margin-left: 20px;
-}
-
-.social-icon:hover, .nav-icon:hover, .home-icon:hover {
-  fill: $secondary-color; 
 }
 
 .footer {
   position: absolute;
-  text-align: center;
   bottom: 0;
   font-size: 18px;
   padding:16px;
   width: 100%;
+  background-color: #efefef;
   @media (max-width:$mobile-breakpoint) {
     padding: 8px;
   }
-  @media (max-width:374px) {
+  /* @media (max-width:374px) {
     display:none;
   }
   @media (max-width:850px) and (orientation:landscape) {
     display: none;
-  }
+  } */
 }
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  
+}
+
+.link-icons {
+  display: flex;
+  fill: white;
+  padding-bottom: 4px;
+}
+
+.social-icon {
+margin-left: 20px;
+}
+
+.social-icon:hover, .nav-icon:hover, .home-icon:hover {
+fill: $secondary-color; 
+}
+
